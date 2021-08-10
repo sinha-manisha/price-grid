@@ -1,0 +1,129 @@
+:root{
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+  font-family: "Karla";
+  background-color: var(--Light-Gray);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: white;
+}
+span{
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  opacity: 0.3;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+}
+.top-card{
+width: 100%;
+background-color: white;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+.heading{
+  color: var(--Cyan);
+  font-weight: 700;
+  margin: 2.5rem 2rem 1rem 2rem;
+}
+.time-line{
+  color: var(--Bright-Yellow);
+  margin-left: 2rem;
+}
+.description{
+  color: var(--Grayish-Blue);
+  margin: 0.7rem 2rem 2.5rem 2rem;
+}
+.bottom-card{
+  display: flex;
+  flex-direction: row;
+}
+.left-card{
+  background-color: hsl(179, 62%, 43%,0.7);
+  border-bottom-left-radius: 8px;
+  width: 50%;
+}
+.plan-heading{
+  margin: 2.5rem 2rem 1rem 2rem;
+  color: white;
+}
+.plan{
+  margin-left: 2rem;
+}
+.left-card p{
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  color:  white;
+  opacity: 0.5;
+}
+#sign-up{
+  width: 75%;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--Bright-Yellow);
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.right-card{
+  background-color: var(--Cyan);
+  opacity: 0.5;
+  width: 50%;
+  border-bottom-right-radius: 8px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  color: white;
+}
+.right-card h3{
+  margin-bottom: 1rem;
+}
+.right-card p{
+  color: white;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 900px) {
+  .container{
+    width: 70%;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 70%;
+  }
+  .bottom-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-card{
+    width: 100%;
+    border-bottom-left-radius: 8px;
+  }
+  .left-card{
+    width: 100%;
+    border-bottom-left-radius: 0;
+  }
+}
